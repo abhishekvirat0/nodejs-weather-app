@@ -1,7 +1,5 @@
 let request = require('request');
-let apiKey = 'f2bf987eef532c2d546ffac94e77bf5a';
-
-// let port = process.env.PORT || 3000, process.env.IP || '0.0.0.0' 
+let apiKey = '************************';
 
 const bodyParser = require('body-parser');
 const express = require('express')
