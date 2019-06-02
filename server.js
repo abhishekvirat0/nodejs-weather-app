@@ -2,7 +2,6 @@ let request = require('request');
 let apiKey = 'f2bf987eef532c2d546ffac94e77bf5a';
 
 // let port = process.env.PORT || 3000, process.env.IP || '0.0.0.0' 
-var port = process.env.port || 3000;
 
 const bodyParser = require('body-parser');
 const express = require('express')
@@ -37,6 +36,4 @@ app.post('/',function(req,res){
 		}
 	});
 })
-app.listen(port,function(){
-	console.log('Example app listening on port 3000!')
-})	
+app.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0' );
