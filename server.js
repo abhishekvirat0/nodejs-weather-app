@@ -18,6 +18,7 @@ app.get('/',function(req,res) {
 
 app.post('/',function(req,res){
 	let city = req.body.city;
+	//units=imperial for farenheit and units=metric for celsius {by default its kelvin}
 	let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 
 	request(url,function(err,response,body){
